@@ -12,11 +12,10 @@
   body {
     background: #fff;
     font-family: helvetica, sans-serif;
-/* TODO: adjust for different screen sizes */
     margin: 0 auto;
     max-width: 600px;
     line-height: 1.5em;
-    padding: 10px;
+    padding: 1em;
   }
   
   .tip {
@@ -55,10 +54,11 @@
     
   }
   
+/*  to be placed under a blockquote. negative top margin to counteract blockquote margin*/
   p.comment {
-    font-size: 90%;
     opacity: 0.90;
-    margin-bottom: 2em;
+    margin-top: -1em;
+    margin-bottom: 1.8em;
   }
   
   h3 {
@@ -74,12 +74,12 @@
     text-decoration-style: wavy;
   }
   
-/*  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     body {
-      width: 94%;
+      font-size: 120%;
     }
   }
-*/  
+
 </style>
 
 
@@ -217,7 +217,7 @@
    <p>It's definitely helpful to name your timers, since the alarm sound is always the same.</p>
      
   <blockquote>
-     start a five minute timer named "tea".
+     start a 60 minute timer named "laundry".
   </blockquote>
     
   <blockquote>
@@ -284,8 +284,8 @@
       Play it <span class="variable">double speed</span>.
     </blockquote>
     
-    <p>Other options: "half speed", "normal speed", "one and a half times normal speed"</p>
-    
+    <p class="comment">Other options: "half speed", "normal speed", "one and a half times normal speed"</p>
+        
   </div>
   
   <h3>Words</h3>
@@ -294,7 +294,7 @@
     how do you say <span class="variable">"Cheers!"</span> in <span class="variable">German</span>?
   </blockquote>
     
-    <p>Other options: Chinese (Mandarin), Japanese, French, Spanish.</p>
+    <p class="comment">Other options: Chinese (Mandarin), Japanese, French, Spanish.</p>
 
   <blockquote>
     how do you spell "counterfeit"</span>?
@@ -339,7 +339,7 @@
       what's a good movie?
       </blockquote>
     
-      <p>To play music ultra low...</p>
+      <p>To play music ultra low... (Siri's voice only goes down to about 5 or 10% volume)</p>
 
     <blockquote>one percent volume.</blockquote>
   
@@ -376,7 +376,49 @@
     <p>If you know where the definitive list of internet radio stations is, please let me know!</p>
       
       
+    <h3>Music</h3>
     
+    <p>You don't need an Apple Music subscription to play music. If you have previously purchased tracks with iTunes, they will be available on HomePod.</p>
+    
+    <p>Play and set the volume...</p>
+    
+    <blockquote>
+      play <span class="variable">My Awesome Mix</span> shuffled at volume 42
+    </blockquote>
+
+    <blockquote>
+      add this song to <span class="variable">My Awesome Mix</span>
+    </blockquote>
+    
+    <p>The following commands only work with an Apple Music subscription.</p>
+    
+    <blockquote>
+    play <span class="variable">something new</span>
+    </blockquote>
+    
+    <p class="comment">
+      <span class="variable">Other options</span>: "some music to dance to", "top 10 songs of 1999", "some indie music", etc.
+    </p>
+    
+    <blockquote>
+    i like this
+    </blockquote>
+
+    <blockquote>
+    never play this song again
+    </blockquote>
+    
+    <p>Music meta data...</p>
+    
+    <blockquote>
+      what year is this song from?
+    </blockquote>
+
+    <blockquote>
+      who sings this?
+    </blockquote>
+    
+        
     <h3>Stocks</h3>
 
     <blockquote>    
@@ -424,7 +466,7 @@
     what's happening <span class="variable">tomorrow</span>?
     </blockquote>
     
-    <p>Other options: "next week", "next monday", "February 14"</p>
+    <p class="comment">Other options: "next week", "next monday", "February 14"</p>
       
       
   <h3>Thanks for reading!</h3>
